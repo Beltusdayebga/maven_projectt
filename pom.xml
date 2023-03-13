@@ -98,8 +98,8 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
-    </plugins>
+       </plugin>
+      </plugins>
 
     <pluginManagement>
       <plugins>
