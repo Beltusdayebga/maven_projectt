@@ -55,22 +55,24 @@
   <build>
     <plugins>
       <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.plugin}</version>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven.compiler.plugin}</version>
         <configuration>
           <source>1.7</source>
           <target>1.7</target>
         </configuration>
-      </plugin>
-                    <plugin>
-                   <groupId>org.apache.maven.plugins</groupId>
-                   <artifactId>maven-war-plugin</artifactId>
-                   <version>${maven.war.plugin}</version>
-                   <configuration>
-                       <failOnMissingWebXml>false</failOnMissingWebXml>
-                   </configuration>
-              </plugin>
+     </plugin>
+             
+       <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-war-plugin</artifactId>
+          <version>${maven.war.plugin}</version>
+          <configuration>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+          </configuration>
+        </plugin>
+             
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
@@ -78,14 +80,6 @@
         </configuration>
       </plugin>
 
-      <plugins>
-       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-enforcer-plugin</artifactId>
-        <version>${maven.enforcer.plugin}</version>
-        <executions>
-          <execution>
-            <id>enforce-maven</id>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
